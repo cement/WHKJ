@@ -1,0 +1,215 @@
+  * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        text-decoration: none;
+        /*font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";*/
+    }
+
+    img {
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+    #body-header-logo {
+        display: inline-block;
+        max-width: 4em;
+        max-height: 4em;
+        padding: 0.5em;
+    }
+    #body-header-title{
+        display: inline-block;
+    }
+    #body-header-nav{
+         min-height: 2em;
+         padding: 0.5em;
+         background-color: #009688;
+    }
+
+    #body-header-nav nav{
+        display: none;
+    }
+
+    #body-header>nav {
+        padding: 0.6em;
+        background-color: #009688;
+    }
+
+    #body-header>nav>a {
+        width: 100%;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    #body-header-nav>a:link {
+        color: blue;
+    }
+
+    #body-header-nav>a:visited {
+        color: blue;
+    }
+
+    #body-header-nav>a:hover {
+        color: red;
+    }
+
+    #body-header-nav>a:active {
+        color: yellow;
+    }
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+    #body-content {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        /*底部一直在底部*/
+        /*flex-grow: 1;*/
+    }
+     #body-content-nav {
+        border-right: 1px solid #0f0;
+        /*background-color: #dee4e4;*/
+        /*border: 1px solid #0f0;*/
+        width: 15%;
+        order: -1;
+    }
+
+    #body-content-nav ul {
+        background-color: #dee4e4;
+        list-style-type: none;
+        line-height: 3em;
+    }
+    #body-content-nav ul li{
+        border-bottom: 1px solid #E6E6FA;
+    }
+
+    #body-content-nav a {
+        display: block;
+        /*width: 10em;*/
+        text-align: center;
+        text-decoration: none;
+        /*background-color: #ffffff;*/
+    }
+
+    #body-content-nav a:hover {
+        background-color: #E6E6FA;
+    }
+
+    #body-content-nav p{
+        font-size: 0.6em;
+        padding: 0.5em;
+        margin-left: 0.8em;
+
+    }
+
+
+    #body-content-main {
+        text-align: center;
+        width: 85%;
+       /* display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;*/
+        padding: 1em 4em;
+        /*border: 2px solid #00f;*/
+    }
+
+     .body-content-item {
+        display: inline-block;
+        
+        max-width: 11em;
+        max-height: 15em;
+       
+        margin: 0.5em;
+        border: 1px solid #f00;
+
+        padding: 0.5em;
+        border-radius: 0.5em;
+        /*background-color: #0ff; */
+
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow: hidden;
+    }
+
+
+    .body-content-item p {
+
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow: hidden;
+    }
+   
+    .body-content-item:hover{
+        /*overflow: visible;*/
+        border: 1px solid #0f0;
+    }
+
+  
+
+    
+
+ /*-------------------------------------------------------------------------------------------------*/
+    
+
+
+    #body-footer {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+
+        background-color: #009688;
+    }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+   
+
+    /*屏幕宽度小于480px时*/
+
+    @media screen and (max-width: 480px) {
+
+        #body-content-nav {
+            display: none;
+        }
+        #body-header-nav nav{
+          display: block;
+       }
+
+    }
+
+     @media screen and (max-width: 960px) {
+
+        #body-content-nav p {
+        display: none;
+        }
+
+    }
+
+   
+    /*  #body-content>a {
+        max-width: 20em;
+        max-height: 20em;
+    }*/
+
+    /*----------------------------------------------------------------------------------------------*/
