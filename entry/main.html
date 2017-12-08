@@ -5,30 +5,60 @@
     <title>山东天凤山文化科技有限公司</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../golbal/css/reset.css">
     <link rel="stylesheet" href="../golbal/css/global.css">
-   
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" href="../golbal/img/favicon.ico" />
     <style>
-    /*css simple reset*/
+    /*#body-content-index{
+        position: relative;
+         width: 85%;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }*/
+/*
+    .index-body-content-item {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        min-height: 12em;
+        min-width: 8em;
+        border: 1px solid #00f;
+        margin: 0.5em;
+        /*background-color: #00f;*/
+    }*/
+    </style>
+
+    <style type="text/css">
+        
+    
     </style>
 </head>
 
 <body>
+
     <div id="body-header">
         <div id="body-header-logo">
             <!-- <img src="../golbal/img/banner.jpg" alt="x" title="x"> -->
-            <a  href="index.html"><img src="../golbal/img/logo.jpg" alt="山东天凤山文化科技有限公司" title="山东天凤山文化科技有限公司"/></a>
-            <h2 >天凤山·首页</h2>
+            <a href="index.html"><img src="../golbal/img/logo.jpg" alt="山东天凤山文化科技有限公司" title="山东天凤山文化科技有限公司"/></a>
+            <h2>天凤山·首页</h2>
         </div>
         <h1>山东天凤山文化科技有限公司</h1>
     </div>
     <div id="body-header-nav">
         <nav>
             <a href="#" target="_Blank">首页</a>
-            <a href="../grain/grain.html" target="_Blank">五谷</a>
-            <a href="../culture/culture.html" target="_Blank">文化</a>
-            <a href="../science/science.html" target="_Blank">科技</a>
-            <a href="../science/science.html" target="_Blank">红酒</a>
-            <a href="../contact/contact.html" target="_Blank">我们</a>
+            <a href="../grain/grain.html" target="_Blank">五谷农业</a>
+            <a href="../culture/culture.html" target="_Blank">文化领域</a>
+            <a href="../science/science.html" target="_Blank">科技产品</a>
+            <a href="../science/science.html" target="_Blank">红酒文化</a>
+            <a href="../contact/contact.html" target="_Blank">关于我们</a>
         </nav>
     </div>
     <div id="body-content">
@@ -41,32 +71,89 @@
                 <li><a href="../science/science.html" target="_Blank">红酒</a></li>
                 <li><a href="../contact/contact.html" target="_Blank">我们</a></li>
             </ul>
-                <p>公司名称：山东天凤山文化科技有限公司</p>
-                <p>咨询热线：xxx-xxx-xxxx</p>
-                <p>电话：xxxx-xxxxxx</p>
-                <p>手机：xxxxxxxxxxx</p>
-                <p>传真：xxxx-xxxxxxx</p>
-                <p>地址：山东诸城惠丰大厦1713室</p>
-            </ul>
+            <p>公司名称：山东天凤山文化科技有限公司</p>
+            <p>咨询热线：xxx-xxx-xxxx</p>
+            <p>电话：xxxx-xxxxxx</p>
+            <p>手机：xxxxxxxxxxx</p>
+            <p>传真：xxxx-xxxxxxx</p>
+            <p>地址：山东诸城惠丰大厦1713室</p>
+            
         </div>
         <div id="body-content-main">
+            <div class="index-body-content-item" id="index-body-content-grain">
+            </div>
+            <div class="index-body-content-item" id="index-body-content-culture">
+            </div>
+            <div class="index-body-content-item" id="index-body-content-science">
+            </div>
         </div>
     </div>
     <div id="body-footer">
-        <div class="footer_main_dh"> <a target="_blank" href="index.html">首页</a>|
-            <a target="_blank" href="list/index/id/1.html">精品推荐</a>|
-            <a target="_blank" href="list/index/id/2.html">产品精选</a>|
-            <a target="_blank" href="list/index/id/3.html">旅游与购物</a>|
-            <a target="_blank" href="list/index/id/4.html">技术普及</a>
-            <span>联系电话：xxxxxxxxxxx </span>
-        </div>
-        <div class="footer_main_dh">
+        <nav class="body-footer-item">
+            <a href="#" target="_Blank">首页</a>|
+            <a href="../grain/grain.html" target="_Blank">五谷丰登</a>|
+            <a href="../culture/culture.html" target="_Blank">文化产业</a>|
+            <a href="../science/science.html" target="_Blank">科学技术</a>|
+            <a href="../science/science.html" target="_Blank">红酒销售</a>|
+            <a href="../contact/contact.html" target="_Blank">关于我们</a>
+        </nav>
+        <div class="body-footer-item">
             <span>山东天凤山文化科技有限公司</span>
-            <span>xxxxxxxx</span>
+            
         </div>
+        <p>(+86)0536-xxxxxxx&nbsp&nbsp&nbsp&nbsp(+86)136 6666 6666</p>
     </div>
+    <script>
+    let innerhtml = `<span class="body-content-item-img">
+                        <a href="#" terget="_blank"><img src="../golbal/img/logo.jpg" alt="测试" title="测试"></a>
+                        </span>
+                        <span class="body-content-item-describe">
+                            <p>产品名称</p>
+                            <p>产品简单描述</p>
+                            <p>这里是商品较详细描述</p>
+                            
+                    </span>`;
 
-    <script src="../golbal/js/itemTemp.js"></script>
+
+    let addChild = function(parentId) {
+
+        let itembox = document.getElementById(parentId);
+       
+        let content = document.createDocumentFragment();
+        let item = document.createElement('div');
+        item.setAttribute('class', 'body-content-item');
+        // item.addClass('body-content-item');
+        item.innerHTML = innerhtml;
+
+        for (let i = 0; i < 10; i++) {
+            content.appendChild(item.cloneNode(true));
+        }
+
+        itembox.appendChild(content);
+        // body...
+    }
+
+    addChild('index-body-content-grain');
+    addChild('index-body-content-culture');
+    addChild('index-body-content-science');
+    // let itembox = document.getElementById('index-body-content-grain');
+    // let content = document.createDocumentFragment();
+
+    // let item = document.createElement('div');
+    // // item.addClass('body-content-item');
+    // item.setAttribute('class', 'body-content-item');
+    // item.innerHTML = innerhtml;
+
+    // for (let i = 0; i < 8; i++) {
+    //     content.appendChild(item.cloneNode(true));
+    // }
+
+    // itembox.appendChild(content);
+
+
+    
+    </script>
+    <!-- <script src="../golbal/js/itemTemp.js"></script> -->
 </body>
 
 </html>
