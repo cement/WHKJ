@@ -103,28 +103,28 @@
         <p>(+86)0536-xxxxxxx&nbsp&nbsp&nbsp&nbsp(+86)136 6666 6666</p>
     </div>
     <script>
-    let innerhtml = `<span class="body-content-item-img">
-                        <a href="#" terget="_blank"><img src="../golbal/img/logo.jpg" alt="测试" title="测试"></a>
-                        </span>
-                        <span class="body-content-item-describe">
-                            <p>产品名称</p>
-                            <p>产品简单描述</p>
-                            <p>这里是商品较详细描述</p>
+    var innerhtml = '<span class="body-content-item-img">'+
+                        '<a href="#" terget="_blank"><img src="../golbal/img/logo.jpg" alt="测试" title="测试"></a>'+
+                        '</span>'+
+                        '<span class="body-content-item-describe">'+
+                            '<p>产品名称</p>'+
+                            '<p>产品简单描述</p>'+
+                            '<p>这里是商品较详细描述</p>'+
                             
-                    </span>`;
+                    '</span>';
 
 
-    let addChild = function(parentId) {
+    var addChild = function(parentId) {
 
-        let itembox = document.getElementById(parentId);
+        var itembox = document.getElementById(parentId);
        
-        let content = document.createDocumentFragment();
-        let item = document.createElement('div');
+        var content = document.createDocumentFragment();
+        var item = document.createElement('div');
         item.setAttribute('class', 'body-content-item');
         // item.addClass('body-content-item');
         item.innerHTML = innerhtml;
 
-        for (let i = 0; i < 10; i++) {
+        for (var i = 0; i < 10; i++) {
             content.appendChild(item.cloneNode(true));
         }
 
