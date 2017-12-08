@@ -21,15 +21,51 @@
 
 
 /*------------------------------------------------------------------------------------------------------------*/
+    
+    #body-header{
+        position:relative;
+        display: table-cell;
+        min-height: 28em;
+        background-image: url('../img/banner01.jpg');
+        text-align: center;
+        vertical-align: middle;
+    }
+    #body-header h1{
+       
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left:50%;
+        transform: translateX(-50%);
 
+        font-size: 3em;
+        
+
+    }
     #body-header-logo {
-        display: inline-block;
+        
+        /*display: inline-block;*/
+        position: absolute;
+       
+        padding: 0.5em;
+
+        margin-bottom: 1em;
+        text-align: center;
+        bottom: 0;
+        /*background-color: #0ff;*/
+
+    }
+    #body-header-logo img{
         max-width: 4em;
         max-height: 4em;
-        padding: 0.5em;
+    }
+
+    #body-header-logo h2{
+        color:#efc707;
     }
     #body-header-title{
-        display: inline-block;
+       
+        /*display: inline-block;*/
     }
     #body-header-nav{
          min-height: 2em;
@@ -195,13 +231,34 @@
         #body-header-nav nav{
           display: block;
        }
+       #body-header{
+          min-height: 10em;
+          /*height: 100px;*/
+
+       }
+        #body-header h1{
+
+            display: none;
+        }
 
     }
+    @media screen and (min-width: 480px) and (max-width: 960px){
+
+        #body-header h1{
+            font-size: 0.5em;
+        }
+
+    }
+
 
      @media screen and (max-width: 960px) {
 
         #body-content-nav p {
         display: none;
+        }
+
+        #body-header h1{
+            font-size: 2em;
         }
 
     }
