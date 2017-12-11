@@ -1,12 +1,12 @@
-var inner =  `<span class="body-content-item-img">
-                        <a href="#" terget="_blank"><img src="../golbal/img/logo.jpg" alt="测试" title="测试"></a>
-                        </span>
-                        <span class="body-content-item-describe">
-                            <p>产品名称</p>
-                            <p>产品简单描述</p>
-                            <p>this is a test item,and abc dce ,gspsdf sdgs sgsdgs dsggd sdgsdgv sgdsg sgd bsdgsgf sgdsgd sgsdgsd sgdsg d</p>
-                            
-                    </span>`;
+var inner =  '<span class="body-content-item-img">'+
+                '<a href="#" terget="_blank"><img src="../golbal/img/logo.jpg" alt="测试" title="测试"></a>'+
+                '</span>'+
+                '<span class="body-content-item-describe">'+
+                    '<p>产品名称</p>'+
+                    '<p>产品简单描述</p>'+
+                    '<p>this is a test item,and abc dce ,gspsdf sdgs sgsdgs dsggd sdgsdgv sgdsg sgd bsdgsgf sgdsgd sgsdgsd sgdsg d</p>'+
+                    
+             '</span>';
         var itembox = document.getElementById('body-content-main');
         var content = document.createDocumentFragment();
         
